@@ -1,25 +1,32 @@
 #include <iostream>
 
+// using namespace std;
+
+// define namespace for std usage
+using std::cout;
+using std::cin;
+using std::endl;
+
 int main() {
     // Initialize variables
     int first_number;
     int second_number;
 
     // Get user input for two numbers
-    std::cout << "Type a number: ";
-    std::cin >> first_number;
+    cout << "Type a number: ";
+    cin >> first_number;
 
-    std::cout << "Type a second number: ";
-    std::cin >> second_number;
+    cout << "Type a second number: ";
+    cin >> second_number;
 
     // Calculate the sum
     int sum = first_number + second_number;
 
     // Conditional output based on the sum
     if (sum > 1000) {
-        std::cout << "The sum is: " << sum << " that's over 1000! "<< std::endl;
+        cout << "The sum is: " << sum << " that's over 1000! "<< endl;
     } else {
-        std::cout << "The sum is: " << sum << std::endl;
+        cout << "The sum is: " << sum << endl;
     }
 
     return sum;
