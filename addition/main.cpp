@@ -12,6 +12,11 @@ int main() {
 
     int sum = first_number + second_number;
 
-    std::cout << "The sum is: " << sum << std::endl;
+    if (sum > 1000) {
+        std::cout << "The sum is: " << sum << " that's over 1000! "<< std::endl;
+    } else {
+        std::cout << "The sum is: " << sum << std::endl;
+    }
+
     return sum;
 }
