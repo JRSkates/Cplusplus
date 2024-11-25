@@ -13,11 +13,8 @@ int main() {
     int second_number;
 
     // Get user input for two numbers
-    cout << "Type a number: ";
-    cin >> first_number;
-
-    cout << "Type a second number: ";
-    cin >> second_number;
+    cout << "Type two numbers seperated with a space: ";
+    cin >> first_number >> second_number;
 
     // Calculate the sum
     int sum = first_number + second_number;
