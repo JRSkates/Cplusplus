@@ -26,5 +26,5 @@ int main() {
         cout << "The sum is: " << sum << endl;
     }
 
-    return sum;
+    return 0;
 }
