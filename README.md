@@ -6,6 +6,12 @@ Welcome to my C++ learning journey! This document outlines the steps and progres
 
 ---
 
+## Primary Learning Resource
+
+I am primarily using the [Beginning C++ Programming](https://www.udemy.com/course/beginning-c-plus-plus-programming/learn/) course on Udemy to guide my learning process. This course provides structured lessons and exercises, helping me build a strong foundation in C++.
+
+---
+
 ## Learning Plan
 
 ### **Days 1–3: C++ Basics**
