@@ -31,14 +31,14 @@ int main() {
     // If you created a char variable like this
     // you would need to declare array of charaters
     // you need one extra for the null character
-    char example_string[6] {"Frank"};
+    char example_string[6] = "Frank";
     cout << "My name is: " << example_string << endl;
 
     // Using strcpy to copy a string
     // This function copies the source string to the destination array
     // The destination array must have enough space to hold the source string
     // The destination array must be large enough to hold the source string plus one null character
-    char new_example [8] {};
+    char new_example [8];
     strcpy(new_example, "Frank");
     cout << "My name is still: " << new_example << endl;
 
@@ -49,10 +49,10 @@ int main() {
     cout << "================================================================" << endl;
     cout << endl;
 
-    char first_name[20] {};
-    char last_name[20] {};
-    char full_name[50] {};
-    char temp[50] {};
+    char first_name[20];
+    char last_name[20];
+    char full_name[50];
+    char temp[50];
 
     cout << "Enter your first name: ";
     cin >> first_name;
