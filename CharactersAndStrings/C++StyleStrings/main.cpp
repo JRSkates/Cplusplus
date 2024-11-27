@@ -89,6 +89,23 @@ int main() {
 
     cout << "--------------------------------" << endl;
 
+    string secret_sentence {"The secret word is Boo"};
+    string word {};
+
+    cout << "Enter a word to find: " << endl;
+    cin >> word;
+
+    size_t position = secret_sentence.find(word);
+    // string::npos means string no position
+    // so if we check if thats not true, we know it has been found
+    if (position!= string::npos) {
+        cout << "The word '" << word << "' was found at position: " << position << endl;
+    } else {
+        cout << "The word '" << word << "' was not found in the sentence." << endl;
+    }
+    
+    cout << "--------------------------------" << endl;
+
     cout << endl;
     cout << "================================================================" << endl;
 
