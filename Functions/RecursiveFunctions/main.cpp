@@ -12,6 +12,7 @@ using namespace std;
 // Function prototypes
 unsigned long long factorial(unsigned long long n);
 unsigned long long fibonacci(unsigned long long n);
+int sum_of_digits(int n);
 
 int main()
 {
@@ -28,6 +29,10 @@ int main()
     cout << fibonacci(30) << endl; // 832040
 
     cout << "----------------------------------------------------------------" << endl;
+
+    cout << "Sum of digits recursive function" << endl;
+    cout << sum_of_digits(12345) << endl; // 15
+    cout << sum_of_digits(5678) << endl; // 5678
 
     cout << "================================================================" << endl;
     cout << endl;
@@ -46,6 +51,16 @@ unsigned long long factorial(unsigned long long n) {
 unsigned long long fibonacci(unsigned long long n) {
     if (n <= 1)
         return n;
+    return fibonacci(n - 1) + fibonacci(n - 2); // recursive call to fibonacci function
+}
+
+int sum_of_digits(int n) {
+    // Write your code below this line
+    if (n == 0)
+        return 0;
     else
-        return fibonacci(n - 1) + fibonacci(n - 2); // recursive call to fibonacci function
+        return (n % 10 + sum_of_digits(n / 10));
+    
+    
+    // Write your code above this line
 }
