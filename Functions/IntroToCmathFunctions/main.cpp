@@ -5,29 +5,9 @@
 
 using namespace std;
 
-// Functions allow the modularization of a program
-// Seperate code into logical self-contained units
-// These units can be reused
-// Function to calculate the sum of two numbers
-int addNumbers(int a, int b) {
-    return a + b;
-}
-// Function to calculate the product of two numbers
-int multiplyNumbers(int a, int b) {
-    return a * b;
-};
-
 int main() {
     cout << "================================================================" << endl;
     cout << endl;
-
-    cout << "Function to calculate the sum of two numbers (3 + 3 in this example): " << endl;
-    cout << addNumbers(3, 3) << endl;
-
-    cout << "Function to calculate the product of two numbers (3 * 3 in this example): " << endl;
-    cout << multiplyNumbers(3, 3) << endl;
-
-    cout << "----------------------------------------------------------------" << endl;
 
     // These functions are from the cmath library
     // C++ has lots of libraries with lots of functions
