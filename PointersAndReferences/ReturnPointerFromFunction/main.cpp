@@ -12,9 +12,10 @@ using namespace std;
 int *create_array(size_t size, int init_value = 0);
 void multiply_with_pointer(int *ptr, int multiplier);
 int find_max_element(int *arr, int size);
-void print_array(int *arr);
+void print_array(int *arr, int size);
 void reverse_array(int *arr, int size);
 string reverse_string(const string& str);
+
 
 int main()
 {
@@ -22,6 +23,7 @@ int main()
     cout << endl;
 
     int *my_array = create_array(5, 2);
+
 
     cout << "Array elements: ";
     for (size_t i = 0; i < 5; i++)
@@ -36,10 +38,12 @@ int main()
     cout << endl;
     cout << "----------------------------------------------------------------" << endl;
 
-    int num{10};
+    int num {10};
+    int *num_ptr {&num};
     cout << "Value of num is: " << num << endl;
     multiply_with_pointer(&num, 3);
     cout << "After multiplying in multiply_with_pointer: num is now " << num << endl;
+    num_ptr = nullptr; //
 
     cout << endl;
     cout << "----------------------------------------------------------------" << endl;
@@ -55,7 +59,7 @@ int main()
 
     reverse_array(arr, size);
     cout << "After reversing array: ";
-    print_array(arr);
+    print_array(arr, size);
 
 
 
@@ -108,10 +112,10 @@ int find_max_element(int *arr, int size)
     return max_value;
 }
 
-void print_array(int *arr)
+void print_array(int *arr, int size)
 {
-    for (size_t i = 0; i < sizeof(arr); i++)
-    {
+    for (size_t i = 0; i < size; i++)
+    {   
         cout << arr[i] << " ";
     }
     cout << endl;
