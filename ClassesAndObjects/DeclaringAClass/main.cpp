@@ -15,7 +15,7 @@ public:
 
     // methods
     void talk(string text_to_say) {
-        cout << text_to_say << endl;
+        cout << name << " says " << text_to_say << endl;
     }
 
     void is_dead() {
@@ -28,6 +28,9 @@ int main() {
     cout << endl;
 
     Player player1;
+    player1.name = "Jack";
+
+
     string say_hello {"Hello!"};
     player1.talk(say_hello);
     player1.is_dead();
@@ -42,6 +45,10 @@ int main() {
     // can create a player with a pointer
     Player *enemy1 {nullptr};
     enemy1 = new Player();
+    enemy1->name = "Enemy";
+    // We use an arrow operator on pointers to dereference them
+    // and use the dot operators
+    enemy1->talk("I am an enemy!");
     delete enemy1;
 
     return 0;
