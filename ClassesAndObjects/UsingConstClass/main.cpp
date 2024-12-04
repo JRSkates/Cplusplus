@@ -3,11 +3,7 @@
 #include "Player.h"
 
 using namespace std;
-// This Pointer
-// Contains the address of the object 
-// So it's a pointer to the object
-// Can only be used in class scope
-// All member access is done via the this pointer
+// Using Const with Class
 
 
 int main() {
@@ -36,19 +32,24 @@ int main() {
 
     cout << endl;
 
-
     // Copy constructor example
     Player hero_copy(hero);
     cout << endl;
     // (const &hero);
     hero_copy.display_player();
 
-    // This creates a true copy, as its passed by reference, not by value
+    cout << endl;
 
-    
-    // function to compare two player object names
-    // uses this pointer in function
-    hero.compare_name(hero_copy);
+    // Const 
+    const Player villain {"Villain", 100, 99};
+    // villain.set_name("Villain (Const)"); // This will throw an error
+    cout << "Player name of villain (const) is: " << villain.get_name() << endl;
+    cout << "Health is: " << villain.get_health() << endl;
+    cout << "XP is: " << villain.get_xp() << endl;
+
+
+    cout << endl;
+
 
     cout << endl;
     cout << "=============================================================" << endl;
