@@ -16,7 +16,7 @@ using namespace std;
 // if we didn't we would only copy the pointer location rather than the data
 class Deep {
 private:
-    int *data;
+    int *data; // Pointer to dynamically allocated memory
 public:
     void set_data_value(int d) { *data = d; }
     int get_data_value() const { return *data; }
@@ -31,12 +31,14 @@ public:
 };
 
 // Default constructor
-Deep::Deep() : data{new int{0}} {
+Deep::Deep(){ 
+    data = new int{0};
     cout << "Default constructor called" << endl;
 }
 
 // Parameterized constructor
-Deep::Deep(int d) : data{new int{d}} {
+Deep::Deep(int d) {
+    data = new int{d};  // Dynamically allocates memory and assigns it to data.
     cout << "Parameterized constructor called" << endl;
 }
 

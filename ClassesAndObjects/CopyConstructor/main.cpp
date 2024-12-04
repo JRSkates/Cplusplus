@@ -17,6 +17,12 @@ int main() {
     cout << "=============================================================" << endl;
     cout << endl;
 
+    Player none;
+    cout << "Player with empty constructor: " << none.get_name() << endl;
+    cout << "Health is: " << none.get_health() << endl;
+    cout << "XP is: " << none.get_xp() << endl;
+
+    cout << "==================" << endl;
 
     Player hero("Hero", 200, 100);
     cout << "Player name of hero is: " << hero.get_name() << endl;
@@ -25,7 +31,7 @@ int main() {
 
     cout << endl;
 
-    
+
     // Copy constructor example
     Player hero_copy(hero);
     cout << endl;
@@ -34,7 +40,7 @@ int main() {
 
     // This creates a true copy, as its passed by reference, not by value
 
-    
+
     cout << endl;
     cout << "=============================================================" << endl;
 

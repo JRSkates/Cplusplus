@@ -17,16 +17,13 @@ Player::Player(std::string name_val , int health_val, int xp_val)
 //     cout << "One-arg constructor called for " << name << endl;
 // }
 
-
 // Destructor
 Player::~Player() {
     cout << "Destructor called for " << name << endl;
 }
 
 // Getter method
-string Player::get_name() {
-    return name;
-}
+string Player::get_name() { return name; };
 
 void Player::set_name(string name_val) { name = name_val; };
 
