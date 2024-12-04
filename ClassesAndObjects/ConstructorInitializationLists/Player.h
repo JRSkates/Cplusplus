@@ -13,9 +13,9 @@ private:
     int xp;
 public:
     // Overloaded Constructors
+    Player(string name, int health, int xp);
     Player();
     Player(string name);
-    Player(string name, int health, int xp);
     // Destructor
     ~Player();
     string get_name();

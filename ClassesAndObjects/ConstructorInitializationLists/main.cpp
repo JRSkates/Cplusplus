@@ -9,6 +9,9 @@ using namespace std;
 // Initializes the data memebers as the object is created
 // order of initialization is the order of declaration in the class
 
+// The constructors have all been implemented with Delgated Construction
+// We pass the full three arg constructor to the other constructors
+
 
 int main() {
     cout << "=============================================================" << endl;
@@ -18,6 +21,13 @@ int main() {
     cout << "Player name is: " << slayer.get_name() << endl;
     cout << "Health is: " << slayer.get_health() << endl;
     cout << "XP is: " << slayer.get_xp() << endl;
+
+    cout << endl;
+
+    Player jack("Jack");
+    cout << "Player name of jack is: " << jack.get_name() << endl;
+    cout << "Health is: " << jack.get_health() << endl;
+    cout << "XP is: " << jack.get_xp() << endl;
 
     cout << endl;
     
