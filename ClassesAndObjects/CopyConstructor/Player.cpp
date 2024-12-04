@@ -42,7 +42,7 @@ void Player::display_player() {
 
 // We pass by reference the object of the same class we want to copy
 // the original class object is passed as a const
-// So it is not modified
+// So it is not modified 
 Player::Player(const Player &source) 
     : name{source.name},
       health{source.health}, 
