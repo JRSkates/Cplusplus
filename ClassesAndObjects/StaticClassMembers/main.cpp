@@ -10,6 +10,8 @@ using namespace std;
 // Independent of any objects
 // Can be called using the class name
 
+// Function prototyped out of Player class scope
+void display_active_players();
 
 int main() {
     cout << "=========================================================" << endl;
@@ -22,16 +24,20 @@ int main() {
     cout << "==================" << endl;
 
     // Static num_players class wide integer
-    none.display_active_players();
+    display_active_players();
 
     Player third_player;
 
-    none.display_active_players();
+    display_active_players();
     
     cout << endl;
     cout << "========================================================" << endl;
 
     return 0;
+}
+
+void display_active_players() {
+    cout << "Number of active players: " << Player::get_num_players() << endl;
 }
 
 // Need to complie this manually with:

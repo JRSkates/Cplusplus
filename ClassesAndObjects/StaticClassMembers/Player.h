@@ -35,7 +35,6 @@ public:
 
     // Class to get the static number of Players
     static int get_num_players();
-    static void display_active_players();
 };
 
 

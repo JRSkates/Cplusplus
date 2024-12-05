@@ -14,6 +14,7 @@ Player::Player(std::string name_val , int health_val, int xp_val)
 
 // // One-arg constructor
 // Player::Player(string name_val) : Player {name_val, 0, 0} {
+//     num_players++;
 //     cout << "One-arg constructor called for " << name << endl;
 // }
 
@@ -63,6 +64,3 @@ int Player::get_num_players() {
     return num_players;
 }
 
-void Player::display_active_players() {
-    cout << "Number of active players: " << Player::get_num_players() << endl;
-}
