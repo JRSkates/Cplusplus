@@ -4,17 +4,7 @@
 #include "Movies.h"
 
 using namespace std;
-// Example of what main should be able to do
-// - create a Movies object
-// - ask the Movies object to add a movie by providing 
-//   name, rating and watch-count
-// - ask the Movies object to increment the watched count by 
-//   1 for a movie, given its name
-// - ask the Movies objec to display all of its movies
-
-void add_movie(Movie &movie, Movies &movie_list) {
-
-}
+// Movie and Movies Classes
 
 int main() {
     cout << "===============================================" << endl;
