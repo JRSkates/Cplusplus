@@ -17,7 +17,6 @@ void Movies::display() {
     cout << this->title << endl;
     cout << "----------------------------------------" << endl;
     for (auto &movie : this->movie_list) {
-        // cout << "Name: " << movie.get_name() << movie;
         movie.display();
         cout << "----------------------------------------" << endl;
     }
@@ -33,6 +32,17 @@ void Movies::increment_watched(const string &name) {
         if (movie.get_name() == name) {
             movie.increment_watched();
             break;
+        }
+    }
+}
+
+void Movies::find_movie(const string &name) {
+    cout << "Search Results for: " << name << " in " << title << endl;
+    cout << "----------------------------------------" << endl;
+    for (const auto &movie : this->movie_list) {
+        if (movie.get_name() == name) {
+            movie.display();
+            return;
         }
     }
 }

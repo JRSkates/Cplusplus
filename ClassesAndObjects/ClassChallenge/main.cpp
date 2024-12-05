@@ -39,6 +39,10 @@ int main() {
     second_list.display_average_rating();
 
     cout << endl;
+
+    second_list.find_movie("Dune Part 2");
+
+    cout << endl;
     cout << "==================" << endl;
 
     // Initiliaze with raw input

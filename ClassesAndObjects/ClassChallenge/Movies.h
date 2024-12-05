@@ -44,6 +44,8 @@ public:
     // Method to increment the watched count of a movie by 1
     void increment_watched(const string &name);
 
+    void find_movie(const string &name);
+
     // Method to get average rating of all movies
     double get_average_rating() const;
 
