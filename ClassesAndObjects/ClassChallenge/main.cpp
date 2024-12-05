@@ -4,20 +4,22 @@
 #include "Movies.h"
 
 using namespace std;
-// Friends of Classes
-// A class (or function) that has access to private class members
-// It is not a member of the class it is accessing
-// Function wise they can be regular non-member functions
-// Can be member methods of another class
-// Class wise - another class can have access to private class members
+// Example of what main should be able to do
+// - create a Movies object
+// - ask the Movies object to add a movie by providing 
+//   name, rating and watch-count
+// - ask the Movies object to increment the watched count by 
+//   1 for a movie, given its name
+// - ask the Movies objec to display all of its movies
 
-// Function prototyped out class scope
 
 
 int main() {
     cout << "=========================================================" << endl;
     cout << endl;
 
+    Movie one_movie("Star Wars", "PG", 1);
+    one_movie.display();
 
     cout << "==================" << endl;
     cout << endl;
