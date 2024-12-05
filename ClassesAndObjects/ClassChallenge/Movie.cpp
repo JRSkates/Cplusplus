@@ -13,13 +13,13 @@
 
 // Implemention of the construcor
 
-Movie::Movie(std::string name, std::string rating, int watched) 
-    : name(name), rating(rating), watched(watched)  {
+Movie::Movie(std::string name, std::string rating, int watched, double out_of_ten) 
+    : name(name), rating(rating), watched(watched), out_of_ten(out_of_ten) {
 }
 
 //Implemention of the copy constructor
 Movie::Movie(const Movie &source) 
-    : Movie{source.name, source.rating, source.watched} {
+    : Movie{source.name, source.rating, source.watched, source.out_of_ten} {
 }
 
 // Implementation of the destructor
@@ -30,5 +30,5 @@ Movie::~Movie() {
 // should just insert the movie attributes to cout
 
 void Movie::display() const {
-    std::cout << name << ", " << rating <<  ", " << watched  <<   std::endl;
+    std::cout << name << ", " << rating <<  ", " << watched  << ", Score: " << out_of_ten <<  std::endl;
 }
